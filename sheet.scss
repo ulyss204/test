@@ -1,0 +1,120 @@
+$myMargin: 0px auto;
+@import "content";
+@import "footer";
+
+body{
+	margin: $myMargin;
+	width: 90%;
+
+	header{
+	
+	height: 135px;
+	    .image{
+	    	float: left;
+	    	background: url(../../images/Rectangle22.png) no-repeat;
+	    	height: 90px;
+            width: 190px;
+            text-align: center;
+            padding-top: 13px;
+            margin: 20px;
+            padding-right: 11px;
+            text-transform: uppercase;
+            font-size: 253%;
+            color: #ffffff;
+            text-shadow: 8px 6px 12px #000;
+	    }
+	    nav{
+	    	
+            float: left;
+            margin-left: 84px;
+            
+	        ul{
+	 	       float: left;
+	 	       margin-top: 9px;
+	    
+	            li{
+	                background: url(../../images/VectorSmartObject0.png) no-repeat;
+	                display: inline-block;
+	                margin-right: 55px;
+	                height: 37px;
+	                width: 57px;
+	                text-indent: -4px;
+
+	                &:hover,&:focus{
+                      color: red;
+                      border-top: 2px solid red;
+                      
+                      background-position: 0 -37px;
+	                }
+	            }
+	            li:nth-child(2){
+	                background: url(../../images/VectorSmartObject11.png) no-repeat;
+	                &:hover,&:focus{
+                      color: red;
+                      border-top: 2px solid red;
+                      
+                      background-position: 0 -35px;
+	                }
+	                
+	            }
+	            li:nth-child(3){
+	                background: url(../../images/VectorSmartObject22.png) no-repeat;
+	                &:hover,&:focus{
+                      color: red;
+                      border-top: 2px solid red;
+                      
+                      background-position: 0 -37px;
+	                }
+
+	            }
+	            li:nth-child(4){
+	                background: url(../../images/VectorSmartObject33.png) no-repeat;
+	                &:hover,&:focus{
+                      color: red;
+                      border-top: 2px solid red;
+                      
+                      background-position: 0 -37px;
+	                }
+	            }
+	            li:nth-child(5){
+	                background: url(../../images/VectorSmartObject44.png) no-repeat;
+	                &:hover,&:focus{
+                      color: red;
+                      border-top: 2px solid red;
+                      
+                      background-position: 0 -37px;
+	                }
+	            }
+	            li:nth-child(6){
+	                background: url(../../images/VectorSmartObject55.png) no-repeat;
+	                height: 35px;
+	                &:hover,&:focus{
+                      color: red;
+                      border-top: 2px solid red;
+                      
+                      background-position: 0 -35px;
+	                }
+	            }
+	            span{
+	            	position: relative;
+                    top: 40px;
+	            }
+
+	        }
+
+	              
+	            
+	    
+	    }
+    } 
+	
+	.rectangle{
+	    width: 45px;
+	    height: 45px;
+	    border: 3px solid red;
+	    float: right;
+        margin: 35px;
+    }
+}
+
+

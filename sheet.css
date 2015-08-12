@@ -1,6 +1,6 @@
 main section header {
   position: relative;
-  background: url("../../images/road.png") no-repeat;
+  background: url(images/road.png) no-repeat;
   height: 570px;
   width: 100%;
   z-index: -1; }
@@ -74,7 +74,7 @@ main section header {
 main section article {
   overflow: auto; }
   main section article .map {
-    background: url("../../images/map1.png") no-repeat;
+    background: url(images/map1.png) no-repeat;
     position: absolute;
     width: 600px;
     height: 540px;
@@ -304,11 +304,11 @@ main footer {
     width: 43px;
     height: 41px; }
   main footer ul li:first-child {
-    background: url("../../images/facebook1.png") no-repeat; }
+    background: url(images/facebook1.png) no-repeat; }
     main footer ul li:first-child:hover, main footer ul li:first-child:focus {
       background-position: 0 -42px; }
   main footer ul li:last-child {
-    background: url("../../images/google1.png") no-repeat; }
+    background: url(images/google1.png) no-repeat; }
     main footer ul li:last-child:hover, main footer ul li:last-child:focus {
       background-position: 0 -41px; }
   main footer .twitter, main footer p, main footer h5 {
@@ -364,7 +364,7 @@ body {
     height: 135px; }
     body header .image {
       float: left;
-      background: url(../../images/Rectangle22.png) no-repeat;
+      background: url(images/Rectangle22.png) no-repeat;
       height: 90px;
       width: 190px;
       text-align: center;
@@ -383,7 +383,7 @@ body {
         float: left;
         margin-top: 9px; }
         body header nav ul li {
-          background: url(../../images/VectorSmartObject0.png) no-repeat;
+          background: url(images/VectorSmartObject0.png) no-repeat;
           display: inline-block;
           margin-right: 55px;
           height: 37px;
@@ -394,31 +394,31 @@ body {
             border-top: 2px solid red;
             background-position: 0 -37px; }
         body header nav ul li:nth-child(2) {
-          background: url(../../images/VectorSmartObject11.png) no-repeat; }
+          background: url(images/VectorSmartObject11.png) no-repeat; }
           body header nav ul li:nth-child(2):hover, body header nav ul li:nth-child(2):focus {
             color: red;
             border-top: 2px solid red;
             background-position: 0 -35px; }
         body header nav ul li:nth-child(3) {
-          background: url(../../images/VectorSmartObject22.png) no-repeat; }
+          background: url(images/VectorSmartObject22.png) no-repeat; }
           body header nav ul li:nth-child(3):hover, body header nav ul li:nth-child(3):focus {
             color: red;
             border-top: 2px solid red;
             background-position: 0 -37px; }
         body header nav ul li:nth-child(4) {
-          background: url(../../images/VectorSmartObject33.png) no-repeat; }
+          background: url(images/VectorSmartObject33.png) no-repeat; }
           body header nav ul li:nth-child(4):hover, body header nav ul li:nth-child(4):focus {
             color: red;
             border-top: 2px solid red;
             background-position: 0 -37px; }
         body header nav ul li:nth-child(5) {
-          background: url(../../images/VectorSmartObject44.png) no-repeat; }
+          background: url(images/VectorSmartObject44.png) no-repeat; }
           body header nav ul li:nth-child(5):hover, body header nav ul li:nth-child(5):focus {
             color: red;
             border-top: 2px solid red;
             background-position: 0 -37px; }
         body header nav ul li:nth-child(6) {
-          background: url(../../images/VectorSmartObject55.png) no-repeat;
+          background: url(images/VectorSmartObject55.png) no-repeat;
           height: 35px; }
           body header nav ul li:nth-child(6):hover, body header nav ul li:nth-child(6):focus {
             color: red;

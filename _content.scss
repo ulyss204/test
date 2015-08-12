@@ -3,7 +3,7 @@ main{
 		header{
 			position: relative;
             
-			background: url("../../images/road.png") no-repeat;
+			background: url(images/road.png) no-repeat;
 			height: 570px;
 			width: 100%;
 			z-index: -1;
@@ -100,7 +100,7 @@ main{
 		article{
 			overflow: auto;
 		    .map{
-			    background: url("../../images/map1.png") no-repeat;
+			    background: url(images/map1.png) no-repeat;
 			    position: absolute;
                 width: 600px;
                 height: 540px;
@@ -395,14 +395,14 @@ main{
 				
 			}
 			li:first-child{
-				background: url("../../images/facebook1.png") no-repeat;
+				background: url(images/facebook1.png) no-repeat;
 				&:hover,&:focus{
 					background-position: 0 -42px;
 				}
 				
 			}
 			li:last-child{
-				background: url("../../images/google1.png") no-repeat;
+				background: url(images/google1.png) no-repeat;
 				&:hover,&:focus{
 					background-position: 0 -41px;
 				}

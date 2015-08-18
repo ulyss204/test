@@ -2,4 +2,36 @@ footer{
 	width: 100%;
 	height: 290px;
 	border-top: 2px solid #da352c;
+	overflow: auto;
+	display: -webkit-inline-box;
+	.left{
+
+		margin-left: 5%;
+		h2{
+			font-size: xx-large;
+    		color: #da352c;
+		}
+		p{
+			margin-bottom: 0;
+    		margin-top: 15%;
+    		font-weight: bold;
+		}
+		h5{
+			margin-top: 7%;
+			font-weight: bold;
+		}
+	}
+	ul{
+		margin-left: 22%;
+   		list-style: none;
+    	margin-top: 3%;
+    	li{
+    		margin-bottom: 35%;
+    		color: black;
+    		font-weight: bold;
+    	}
+	}
+	#right{
+		margin-left: 5%;
+	}
 }

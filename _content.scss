@@ -14,16 +14,17 @@ main{
   
                 text-transform: uppercase;
                 font-size: 9px;
-                height: 13px;
+                height: 17px;
                 position: absolute;
                 
-                text-align: -webkit-center;
+                text-align: center;
 				padding: 6px 15px 0 15px;
 				color: #fff;
 				
-				
+				font-weight: bold;
 				margin: 10% 44.5%; 
-				display: block; 
+				display: block;
+				font-size: 12px; 
 				
 
 				&:before{
@@ -31,9 +32,9 @@ main{
 					display:block; 
 					position:absolute; 
 					border-top: 2px solid #fff; 
-					top: 50%; 
+					top: 55%; 
 					width: 20px; 
-					left:0px; 
+					left:-6px; 
 					z-index:-1;
 
 				}
@@ -42,9 +43,9 @@ main{
 					display:block; 
 					position:absolute; 
 					border-top: 2px solid #fff; 
-					top: 50%; 
+					top: 55%; 
 					width: 20px;
-					right:0px; 
+					right:-6px; 
 					z-index:-1;
 				}
 			}
@@ -52,29 +53,40 @@ main{
 				color: #fff;
                 top: 30%;
                 position: absolute;
-                left: 24%;
+                left: 23%;
                 font-size: 58px;
                 width: 670px;
-                text-align: -webkit-center;
+                text-align: center;
                 height: 86px;
                 margin: 0;
+                font-family: "PFSquareSansPro-Regular";
 			}
 			
 			.circle{
-				border: 1px solid red;
-				width: 10px;
-				height: 10px;
+				border: 3px solid #da352c;
+				width: 30px;
+				height: 30px;
 				border-radius: 70%;
 				float: right;
-                margin-top: 11%;
-                margin-right: 2%;
+                margin-top: 15%;
+                margin-right: 3%;
 				.point{
-					background: red;
-				width: 2px;
-				height: 2px;
-				border-radius: 50%;
-				margin: 10px;
+					background: #da352c;
+				    width: 5px;
+				    height: 5px;
+				    border-radius: 50%;
+				    margin: 13px;
 				}
+			    .round{
+				
+				    border: 2px solid white;
+				    width: 12px;
+				    height: 12px;
+				    border-radius: 70%;
+				    float: right;
+                    margin-top: 85%;
+                    margin-right: 21%
+			    }	
 			}
 			.btn{
 				  width: 220px;
@@ -86,6 +98,8 @@ main{
                   position: absolute;
                   top: 65%;
                   left: 41%;
+                  font-family: "PFSquareSansPro-Bold";
+
 			}
 			.mouse{
 				top: 85%;
@@ -134,6 +148,8 @@ main{
                     margin-top: 20%;
                     text-transform: uppercase;
                     position: relative;
+                    font-weight: bold;
+                    height: 22px;
 				    &:before{
 					    content: "";
 					    display:block; 
@@ -162,6 +178,7 @@ main{
                     width: 215px;
                     text-align: -webkit-center;
                     left: 37%;
+                    font-weight: bold;
                 }
 
 			    .check1{
@@ -187,6 +204,7 @@ main{
                     text-transform: uppercase;
                     margin-left: 40%;
                     margin-top: 35%;
+                    font-family: "PFSquareSansPro-Bold";
 			    }
 		    }
 		}
@@ -196,14 +214,10 @@ main{
 	.why{
 
 		width: 112px; 
-				
-  
-  
-
         font-weight: bold;
         text-transform: uppercase;
         font-size: 12px;
-        height: 13px;
+        height: 17px;
         position: relative;    
         text-align: -webkit-center;
 		padding: 6px 15px 0 15px;
@@ -242,12 +256,12 @@ main{
             padding-right: 50px;
             h6{
 
-                font-size: 12px;
+                font-size: 15px;
                 font-weight: bold;
                 text-transform: uppercase;
                 line-height: 2.083;
                 text-align: left;
-                width: 26%;
+                width: 27%;
                 &:after{
             	    content: "";
             	    border-bottom: 1px solid #da352c;
@@ -255,6 +269,7 @@ main{
             	    display: block;
                 }
             }
+            
             span{
         	    float: right;
                 position: absolute;
@@ -296,13 +311,14 @@ main{
 		float: left;
 		padding-left: 105px;
 		background-color: #fcfcfc;
+		margin-top: 5%;
 	    .news{
             float: left;
 		    width: 112px; 
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 12px;
-            height: 13px;
+            font-size: 15px;
+            height: 20px;
             position: relative;    
             text-align: -webkit-center;
 		    padding: 6px 15px 0 15px;
@@ -359,6 +375,8 @@ main{
                     margin-top: -22px;
                     h3{
                 	    margin-left: 20%;
+                	    color: black;
+                	    font-weight: bold;
                     }
                     p{
                 	    margin-left: 20%;
@@ -379,14 +397,18 @@ main{
         margin-bottom: 12%;
         height: 100%;
         border: none;
+        overflow: hidden;
+        
+        margin-left: 9%;
 		.contacts{
             font-size: 50px;
             line-height: 1;
-            margin-left: 44%;
-            
+            margin-left: 37%;
+            font-family: "PFSquareSansPro-Light";
             height: 35px;
 		}
-		ul{
+		.net{
+			margin-right: 15%;
 			li{
 				display: inline-block;
 				text-indent: -9999px;
@@ -394,19 +416,23 @@ main{
 				height: 41px;
 				
 			}
-			li:first-child{
-				background: url(images/facebook1.png) no-repeat;
-				&:hover,&:focus{
-					background-position: 0 -42px;
-				}
+			a:first-child{
+				li{
+					background: url(images/facebook1.png) no-repeat;
+					&:hover,&:focus{
+						background-position: 0 -42px;
+					}
 				
+				}
 			}
-			li:last-child{
-				background: url(images/google1.png) no-repeat;
-				&:hover,&:focus{
-					background-position: 0 -41px;
-				}
+			a:last-child{
+				li{
+					background: url(images/google1.png) no-repeat;
+					&:hover,&:focus{
+						background-position: 0 -41px;
+					}
 				
+				}
 			}
 		}
 		.twitter,p,h5{
@@ -414,6 +440,8 @@ main{
 		}
 		p{
 			margin-top: 35px;
+			width: 89%;
+			font-weight: bold;
 			span{
 				margin-left: 15px;
                 color: red;
@@ -421,45 +449,53 @@ main{
 			}
 		}
 		h5{
-			text-align: -webkit-center;
+			
             font-size: 25px;
             margin-bottom: 20px;
             margin-top: 0;
             margin-left: 35px;
+            width: 84%;
+            font-weight: bold;
             span{
             	font-size: 16px;
                 margin-right: 6px;
             }
 		}
-		.name{
-			border: none;
-			width: 43%;
-            border-bottom: 2px solid #d9d9d9;
-            padding-bottom: 15px;
-            
-            margin-left: 105px;
-		}
-		#e-mail{
-			margin-left: 20px;
-		}
-		.message{
-			margin-left: 105px;
-            width: 87.7%;
-            height: 130px;
-            margin-top: 30px;
-            ::-webkit-input-placeholder {};
-            :-moz-placeholder {}
-		}
-		.btn2{
-			width: 215px;
-            height: 60px;
-            background-color: #da352c;
-            border: none;
-            color: #fff;
-            font-size: 18px;
-            text-transform: uppercase;
-            margin-left: 44.5%;
-            margin-top: 5%;
-		}
+		form{
+			width: 92%;
+		    .name{
+			    border: none;
+			    width: 47%;
+                border-bottom: 2px solid #d9d9d9;
+                padding-bottom: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+		    }
+		    #e-mail{
+			    margin-left: 20px;
+		    }
+		    .message{
+                width: 95.7%;
+                height: 130px;
+                margin-top: 30px;
+                &::-webkit-input-placeholder {margin: 20px; };
+                &:-moz-placeholder {margin: 20px;};
+                text-indent: 3%;
+                font-size: x-large; 
+                font-family: "PFSquareSansPro-Regular";
+		    }
+		    .btn2{
+			    width: 215px;
+                height: 60px;
+                background-color: #da352c;
+                border: none;
+                color: #fff;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-left: 38.5%;
+                margin-top: 5%;
+                font-family: "PFSquareSansPro-Bold";
+		    }
+	    }
 	}	
 }

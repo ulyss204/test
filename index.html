@@ -3,25 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="sheet.css" type="text/css"/>
+	<link rel="stylesheet" href="sheet.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="stylename.css" type="text/css" />
 	
 </head>
 <body>
 	<header>
-		<div class="image">Цифра</div>
+		<a href="#"><div class="image">Digit</div></a>
 		
 		<nav>
 
 		    <ul>
-			   <li><span>Internet</span></li>
-			   <li><span>Telephony</span></li>
-			   <li><span>VPS</span></li>
-			   <li><span>Chanels</span></li>
-			   <li><span>Fiber-opt</span></li>
-			   <li><span>Solutions</span></li>
+			   <a href="#"><li><span>Internet</span></li></a>
+			   <a href="#"><li><span>Telephony</span></li></a>
+			   <a href="#"><li><span id="VPS">VPS</span></li></a>
+			   <a href="#"><li><span>Chanels</span></li></a>
+			   <a href="#"><li><span>Fiber-opt</span></li></a>
+			   <a href="#"><li><span>Solutions</span></li></a>
 		    </ul>
 		</nav>
-		<div class="rectangle">
+		<a href="#"><div class="rectangle"></a>
 			<div class="line1"></div>
 			<div class="line2"></div>
 		</div>
@@ -30,22 +33,24 @@
 		<section>
 			<header>
 			    
-				<h4>Цифра это</h4>
-		        <h1>Полный спектр услуг для вашего бизнеса</h1>
+				<h4>Digit is</h4>
+		        <h1>Full range of Internet services for your business</h1>
 		        <div class="circle">
 		        	<div class="point"></div>
+		        	<div class="round"></div>
+		        	<div class="round"></div>
 		        </div>
-		        <button class="btn">Подключить</button>
+		        <button class="btn">Connect</button>
 		        <img src="images/mouse.png" class="mouse">
 			</header>
 			<article>
                 
-			    <div class="map">
+			    <a href="#"><div class="map">
 				    <img src="images/otmetka1.png" class="sign">
 				    <div class="round"></div>
-			    </div>
+			    </div></a>
 
-			    <form action="">
+			    <form action="#">
 		            <h5>kiev</h5>
 		            <h3>check coverage in your street</h3>
 		            <input type="search" class="check1" placeholder="enter the street">
@@ -63,7 +68,7 @@
 		
 		<div class="offer">
 			<img src="images/tie.png">
-			<h6>service premium</h6><span>1</span>
+			<h6 id="width">service premium</h6><span>1</span>
 			<p>Credo of the company DIGIT - the maximum of our efforts and the efforts of the client at least. Our customers do not need to come to the office to fill in the documents and procedural issues for a long time to find out. The documents delivered by courier to sign within days. Convenient personal cabinet contains the necessary information and reporting system is reminiscent of payment deadlines. </p>
 			
 		
@@ -96,17 +101,17 @@
 		<aside>
 			<div class="news">news</div>
 			<div class="bank">
-				<div class="day">13<span class="month">06</span><span class="year">2015</span></div>
+				<a href="#"><div class="day">13<span class="month">06</span><span class="year">2015</span></div></a>
 				<div>
-					<h3>Closing a bank account in "Fortuna bank"</h3>
+					<a href="#"><h3>Closing a bank account in "Fortuna bank"</h3></a>
 					<p>"INTER-TELECOM" announce the closing of a bank account "Fortuna bank"</p>
 				</div>
 
 			</div>
 			<div class="bank">
-				<div class="day" id="marg">13<span class="month">06</span><span class="year">2015</span></div>
+				<a href="#"><div class="day" id="marg">13<span class="month">06</span><span class="year">2015</span></div></a>
 				<div id="marg">
-					<h3>Closing a bank account in "Fortuna bank"</h3>
+					<a href="#"><h3>Closing a bank account in "Fortuna bank"</h3></a>
 					<p>"INTER-TELECOM" announce the closing of a bank account "Fortuna bank"</p>
 				</div>
 
@@ -115,24 +120,41 @@
 		<footer>
 			<div class="contacts">Contacts</div>
 			<div class="twitter">
-				<ul>
-					<li>google</li>
-					<li>facebook</li>
+				<ul class="net">
+					<a href="#"><li>google</li></a>
+					<a href="#"><li>facebook</li></a>
 				</ul>
 				
 			</div>
-			<p>01030,Kyiv,Lysenko str<span>info@digit.ua</span></p>
+			<p>01030,Kyiv,Lysenko str<a href="#"><span>info@digit.ua</span></a></p>
 			<h5><span>044</span>2034787</h5>
-			<input type="text" class="name" placeholder="name*">
-			<input type="text" class="name" id="e-mail" placeholder="e-mail*">
-			<input type="text" class="message" placeholder="Message text">
-		    <input type="submit" value="check" class="btn2">
+			<form action="#">
+			    <input type="text" class="name" placeholder="name*">
+			    <input type="text" class="name" id="e-mail" placeholder="e-mail*">
+			    <input type="text" class="message" placeholder="Message text">
+		        <input type="submit" value="check" class="btn2">
+		    </form>
 		</footer>
 		
 		
 	</main>
 	<footer>
-		<div></div>
+		<div class="left">
+			<a href="#"><h2>Digit</h2></a>
+			<p>©2010-2015</p>
+			<h5>Internet service provider DIGIT</h5>
+		</div>
+		<ul>
+			<a href="#"><li><span>Internet</span></li></a>
+			<a href="#"><li><span>Telephony</span></li></a>
+			<a href="#"><li><span>VPS</span></li></a>
+			
+		</ul>
+		<ul id="right">
+			<a href="#"><li><span>Chanels</span></li></a>
+			<a href="#"><li><span>Fiber-opt</span></li></a>
+			<a href="#"><li><span>Solutions</span></li></a>
+		</ul>
 	</footer>
 </body>
 </html>

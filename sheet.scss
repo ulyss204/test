@@ -4,101 +4,139 @@ $myMargin: 0px auto;
 
 body{
 	margin: $myMargin;
-	width: 90%;
+	width: 1200px;
+	font-family: 'PT Sans',"PFSquareSansPro-Regular", Helvetica, Arial, sans-serif;
 
 	header{
 	
 	height: 135px;
+	position: relative;
 	    .image{
 	    	float: left;
 	    	background: url(images/Rectangle22.png) no-repeat;
 	    	height: 90px;
             width: 190px;
             text-align: center;
-            padding-top: 13px;
+            padding-top: 9px;
             margin: 20px;
             padding-right: 11px;
             text-transform: uppercase;
-            font-size: 253%;
+            font-size: 260%;
             color: #ffffff;
             text-shadow: 8px 6px 12px #000;
+            font-weight: 700;
 	    }
 	    nav{
 	    	
             position: absolute;
             margin-left: 20%;
             top: 22px;
+            width: 70%;
             
 	        ul{
-	 	       float: left;
+	 	       width: 92%;
 	 	       margin-top: 9px;
-	    
+	 	       margin-left: 5%;
+	 	       
+
 	            li{
 	                background: url(images/VectorSmartObject0.png) no-repeat;
 	                display: inline-block;
-	                margin-right: 55px;
+	                margin-right: 10%;
 	                height: 37px;
 	                width: 57px;
-	                text-indent: -4px;
-
-	                &:hover,&:focus{
-                      color: red;
-                      border-top: 2px solid red;
-                      
-                      background-position: 0 -37px;
-	                }
-	            }
-	            li:nth-child(2){
-	                background: url(images/VectorSmartObject11.png) no-repeat;
-	                &:hover,&:focus{
-                      color: red;
-                      border-top: 2px solid red;
-                      
-                      background-position: 0 -35px;
-	                }
+	                text-indent: 0;
 	                
-	            }
-	            li:nth-child(3){
-	                background: url(images/VectorSmartObject22.png) no-repeat;
-	                &:hover,&:focus{
-                      color: red;
-                      border-top: 2px solid red;
-                      
-                      background-position: 0 -37px;
-	                }
+	                text-transform: uppercase;
+	                
 
-	            }
-	            li:nth-child(4){
-	                background: url(images/VectorSmartObject33.png) no-repeat;
 	                &:hover,&:focus{
-                      color: red;
-                      border-top: 2px solid red;
                       
                       background-position: 0 -37px;
 	                }
 	            }
-	            li:nth-child(5){
-	                background: url(images/VectorSmartObject44.png) no-repeat;
-	                &:hover,&:focus{
-                      color: red;
-                      border-top: 2px solid red;
-                      
-                      background-position: 0 -37px;
-	                }
+	        
+	        	a:nth-child(2){
+	        		
+	            	li{
+	                	background: url(images/VectorSmartObject44.png) no-repeat;
+	                	width: 50px;
+	                	text-indent: -10px;
+	                	&:hover,&:focus{
+                      		
+                      		background-position: 0 -37px;
+	                	}
+	                
+	            	}
+	        	}
+	        	a:nth-child(3){
+	            	li{
+	                	background: url(images/VectorSmartObject55.png) no-repeat;
+	                	height: 35px;
+	                	width: 30px;
+	                	text-indent: -1px;
+	                	&:hover,&:focus{
+                      		 
+                      		background-position: 0 -35px;
+	                	}
+
+	            	}
 	            }
-	            li:nth-child(6){
-	                background: url(images/VectorSmartObject55.png) no-repeat;
-	                height: 35px;
-	                &:hover,&:focus{
-                      color: red;
-                      border-top: 2px solid red;
+	            a:nth-child(4){
+	            	li{
+	                	background: url(images/VectorSmartObject22.png) no-repeat;
+	                	height: 38px;
+	                	width: 35px;
+	                	text-indent: -8px;
+	                	&:hover,&:focus{
+                      		
                       
-                      background-position: 0 -35px;
-	                }
+                      		background-position: 0 -38px;
+	                	}
+	            	}
+	            }
+	            a:nth-child(5){
+	            	li{
+	                	background: url(images/VectorSmartObject11.png) no-repeat;
+	                	height: 36px;
+	                	text-indent: -8px;
+	                	&:hover,&:focus{
+                      		
+                      		background-position: 0 -36px;
+	                	}
+	            	}
+	            }
+	            a:nth-child(6){
+	            	li{
+	                	background: url(images/VectorSmartObject33.png) no-repeat;
+	                	height: 39px;
+	                	width: 31px;
+	                	text-indent: -10px;
+	                	&:hover,&:focus{
+                      		
+                      		background-position: 0 -39px;
+	                	}
+	            	}
 	            }
 	            span{
 	            	position: relative;
                     top: 40px;
+                    font-style: normal;
+                    font-size: 12px;
+                    color: #c8c8c8;
+                    border-top: 2px solid white;
+    				padding-top: 55px;
+    				font-weight: 700;
+    				&:hover,&:focus{
+    					border-color: red;
+    					color: red;
+                      
+    				}
+
+	            }
+	            #VPS{
+	            	padding-left: 5px;
+    				padding-right: 4px;
 	            }
 
 	        }
@@ -129,9 +167,15 @@ body{
             height: 2px;
             background-color: red;
             position: absolute;
-            top: 53%;
+            top: 40%;
             left: 33%;
+            color: yellow;
         }
+    }
+    a{
+    	text-decoration: none;
+    	
+
     }
 }
 

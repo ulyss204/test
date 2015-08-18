@@ -1,0 +1,10 @@
+/* font-family: "PFSquareSansProMedium"; */
+@font-face {
+    font-family: "PFSquareSansProMedium";
+    src: url("../fonts/PFSquareSansProMedium/PFSquareSansProMedium.eot");
+    src: url("../fonts/PFSquareSansProMedium/PFSquareSansProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PFSquareSansProMedium/PFSquareSansProMedium.woff") format("woff"),
+    url("../fonts/PFSquareSansProMedium/PFSquareSansProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

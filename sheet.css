@@ -1,10 +1,8 @@
-main section header {
+main section #scroller {
   position: relative;
-  background: url(images/road.png) no-repeat;
   height: 570px;
-  width: 100%;
-  z-index: -1; }
-  main section header h4 {
+  width: 100%; }
+  main section #scroller h4 {
     width: 86px;
     text-transform: uppercase;
     font-size: 9px;
@@ -17,7 +15,7 @@ main section header {
     margin: 10% 44.5%;
     display: block;
     font-size: 12px; }
-    main section header h4:before {
+    main section #scroller h4:before {
       content: "";
       display: block;
       position: absolute;
@@ -26,7 +24,7 @@ main section header {
       width: 20px;
       left: -6px;
       z-index: -1; }
-    main section header h4:after {
+    main section #scroller h4:after {
       content: "";
       display: block;
       position: absolute;
@@ -35,7 +33,7 @@ main section header {
       width: 20px;
       right: -6px;
       z-index: -1; }
-  main section header h1 {
+  main section #scroller h1 {
     color: #fff;
     top: 30%;
     position: absolute;
@@ -46,7 +44,7 @@ main section header {
     height: 86px;
     margin: 0;
     font-family: "PFSquareSansPro-Regular"; }
-  main section header .circle {
+  main section #scroller .circle {
     border: 3px solid #da352c;
     width: 30px;
     height: 30px;
@@ -54,13 +52,13 @@ main section header {
     float: right;
     margin-top: 15%;
     margin-right: 3%; }
-    main section header .circle .point {
+    main section #scroller .circle .point {
       background: #da352c;
       width: 5px;
       height: 5px;
       border-radius: 50%;
       margin: 13px; }
-    main section header .circle .round {
+    main section #scroller .circle .round {
       border: 2px solid white;
       width: 12px;
       height: 12px;
@@ -68,7 +66,7 @@ main section header {
       float: right;
       margin-top: 85%;
       margin-right: 21%; }
-  main section header .btn {
+  main section #scroller .btn {
     width: 220px;
     height: 60px;
     background-color: #da352c;
@@ -78,7 +76,9 @@ main section header {
     position: absolute;
     top: 65%;
     left: 41%; }
-  main section header .mouse {
+    main section #scroller .btn:hover, main section #scroller .btn:focus {
+      opacity: 0.4; }
+  main section #scroller .mouse {
     top: 85%;
     position: absolute;
     left: 49%; }
@@ -163,6 +163,8 @@ main section article {
       margin-left: 40%;
       margin-top: 35%;
       font-family: "PFSquareSansPro-Bold"; }
+      main section article form .btn1:hover, main section article form .btn1:focus {
+        opacity: 0.4; }
 main .why {
   width: 112px;
   font-weight: bold;
@@ -337,8 +339,12 @@ main footer {
         background-position: 0 -41px; }
   main footer .twitter, main footer p, main footer h5 {
     text-align: center; }
+  main footer .twitter {
+    width: 212px;
+    margin-left: 33%;
+    margin-top: 4%; }
   main footer p {
-    margin-top: 35px;
+    margin-top: 15px;
     width: 89%;
     font-weight: bold; }
     main footer p span {
@@ -370,13 +376,11 @@ main footer {
       width: 95.7%;
       height: 130px;
       margin-top: 30px;
+      line-height: 2;
+      color: #d9d9d9;
       text-indent: 3%;
       font-size: x-large;
       font-family: "PFSquareSansPro-Regular"; }
-      main footer form .message::-webkit-input-placeholder {
-        margin: 20px; }
-      main footer form .message:-moz-placeholder {
-        margin: 20px; }
     main footer form .btn2 {
       width: 215px;
       height: 60px;
@@ -388,6 +392,8 @@ main footer {
       margin-left: 38.5%;
       margin-top: 5%;
       font-family: "PFSquareSansPro-Bold"; }
+      main footer form .btn2:hover, main footer form .btn2:focus {
+        opacity: 0.4; }
 
 footer {
   width: 100%;
@@ -415,6 +421,8 @@ footer {
       margin-bottom: 35%;
       color: black;
       font-weight: bold; }
+      footer ul li:hover, footer ul li:focus {
+        opacity: 0.4; }
   footer #right {
     margin-left: 5%; }
 
@@ -530,5 +538,12 @@ body {
       color: yellow; }
   body a {
     text-decoration: none; }
+  body #menu {
+    width: 400px;
+    height: 135px;
+    background-color: #cb0511;
+    transform: translateX(calc(-100% - 10px)); }
+    body #menu:active {
+      transform: translateX(0); }
 
 /*# sourceMappingURL=sheet.css.map */

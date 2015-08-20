@@ -29,6 +29,9 @@ footer{
     		margin-bottom: 35%;
     		color: black;
     		font-weight: bold;
+    		&:hover,&:focus{
+    			opacity: 0.4;
+    		}
     	}
 	}
 	#right{

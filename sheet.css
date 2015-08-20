@@ -542,8 +542,9 @@ body {
     width: 400px;
     height: 135px;
     background-color: #cb0511;
-    transform: translateX(calc(-100% - 10px)); }
+    transform: translateX(calc(-100% - 80px)); }
     body #menu:active {
-      transform: translateX(0); }
+      transform: translateX(0);
+      display: none; }
 
 /*# sourceMappingURL=sheet.css.map */

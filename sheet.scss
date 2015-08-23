@@ -6,81 +6,66 @@ body{
 	margin: $myMargin;
 	width: 1200px;
 	font-family: 'PT Sans',"PFSquareSansPro-Regular", Helvetica, Arial, sans-serif;
-
-
-	header{
 	
-	height: 135px;
-	position: relative;
-	    .image{
-	    	float: left;
-	    	background: url(images/Rectangle22.png) no-repeat;
-	    	height: 90px;
-            width: 190px;
-            text-align: center;
-            padding-top: 9px;
-            margin: 20px;
-            padding-right: 11px;
-            text-transform: uppercase;
-            font-size: 260%;
-            color: #ffffff;
-            text-shadow: 8px 6px 12px #000;
-            font-weight: 700;
-	    }
-	    nav{
-	    	
-            position: absolute;
-            margin-left: 20%;
-            top: 22px;
-            width: 70%;
-            
-	        ul{
-	 	       width: 92%;
-	 	       margin-top: 9px;
-	 	       margin-left: 5%;
-	 	       
-
-	            li{
-	                background: url(images/VectorSmartObject0.png) no-repeat;
-	                display: inline-block;
-	                margin-right: 10%;
-	                height: 37px;
-	                width: 57px;
-	                text-indent: 0;
-	                
-	                text-transform: uppercase;
-	                
-
-	                &:hover,&:focus{
-                      
-                      background-position: 0 -37px;
-	                }
-	            }
-	        
-	        	a:nth-child(2){
-	        		
+		header{
+		height: 135px;
+		position: relative;
+	    	.image{
+	    		float: left;
+	    		background: url(images/Rectangle22.png) no-repeat;
+	    		height: 90px;
+            	width: 190px;
+            	text-align: center;
+            	padding-top: 9px;
+            	margin: 20px;
+            	padding-right: 11px;
+            	text-transform: uppercase;
+            	font-size: 260%;
+            	color: #ffffff;
+            	text-shadow: 8px 6px 12px #000;
+            	font-weight: 700;
+	    	}
+	    	nav{
+            	position: absolute;
+            	margin-left: 20%;
+            	top: 22px;
+            	width: 70%;
+	        	ul{
+	 	       		width: 92%;
+	 	       		margin-top: 9px;
+	 	       		margin-left: 5%;
 	            	li{
-	                	background: url(images/VectorSmartObject44.png) no-repeat;
-	                	width: 50px;
-	                	text-indent: -10px;
+	                	background: url(images/VectorSmartObject0.png) no-repeat;
+	                	display: inline-block;
+	                	margin-right: 10%;
+	                	height: 37px;
+	                	width: 57px;
+	                	text-indent: 0;  
+	                	text-transform: uppercase;
 	                	&:hover,&:focus{
-                      		
                       		background-position: 0 -37px;
 	                	}
-	                
 	            	}
-	        	}
-	        	a:nth-child(3){
-	            	li{
-	                	background: url(images/VectorSmartObject55.png) no-repeat;
-	                	height: 35px;
-	                	width: 30px;
-	                	text-indent: -1px;
-	                	&:hover,&:focus{
-                      		 
-                      		background-position: 0 -35px;
-	                	}
-
+	        		a:nth-child(2){
+	            		li{
+	                		background: url(images/VectorSmartObject44.png) no-repeat;
+	                		width: 50px;
+	                		text-indent: -10px;
+	                		&:hover,&:focus{
+                      			background-position: 0 -37px;
+	                		}
+	            		}
+	        		}
+	        		a:nth-child(3){
+	            		li{
+	                		background: url(images/VectorSmartObject55.png) no-repeat;
+	                		height: 35px;
+	                		width: 30px;
+	                		text-indent: -1px;
+			            	&:hover,&:focus{
+			              		 
+			              		background-position: 0 -35px;
+			            	}
 	            	}
 	            }
 	            a:nth-child(4){
@@ -140,15 +125,12 @@ body{
     				padding-right: 4px;
 	            }
 
-	        }
-
-	              
-	            
+	        }       
 	    
 	    }
     } 
 	
-	.rectangle{
+	#rectangle{
 	    width: 45px;
 	    height: 45px;
 	    border: 3px solid red;
@@ -170,25 +152,116 @@ body{
             position: absolute;
             top: 40%;
             left: 33%;
-            color: yellow;
+        }
+        .line3{
+        	width: 17px;
+            height: 2px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 33%;
         }
     }
     a{
     	text-decoration: none;
     }
     #menu{
-    	width: 400px;
-    	height: 135px;
+    	
+    	height: 100%;
     	background-color:#cb0511;
-    	transform: translateX(calc(-100% - 80px));
+    	width: 13.1%;
+    	display: none;
+    	right: 0;
+    	-webkit-transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);;
+		-moz-transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+		transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+		border-left: 3px solid red;
+    	color: #fff;
+		z-index: 3;
+		position: fixed;
+		&:active{
+			right: 0;
+			display: block;
+		}
+		.exit{
+			position: absolute;
+		    border: 1px solid white;
+		    font-size: 20px;
+		    padding-left: 3px;
+		    padding-right: 3px;
+		    color: white;
+		    box-shadow: 2px 2px 7px black;
+		    text-shadow: 2px 2px 4px black;
+		}
+		h4{
+			text-align: center;
+    		text-shadow: 8px 6px 12px #000;
+    		font-size: 30px;
+		    text-transform: uppercase;
+		    margin-top: 20%;
+		    border-bottom: 2px solid white;
+		    width: 60%;
+		    margin-left: 18%;
+		    padding-bottom: 5%;
+		}
+		ul{
+			margin: 0;
+    		list-style: none;
+    		padding: 0;
+    		padding-left: 10%;
+    		li{
+    			font-size: 20px;
+			    font-weight: 700;
+			    text-transform: uppercase;
+			    background-color: pink;
+			    color: lavenderblush;
+			    width: 10%;
+			    text-indent: 15%;
+			    -webkit-transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);;
+				-moz-transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);
+				transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);
+			    &:hover,&:focus{
+			    	width: 100%;
+			    	
+			    }
 
-    	&:active{
-    		transform: translateX(0);
-    		display: none;
-    		
-    	} 
+			}
+    		a:nth-child(2){
+				li{
+					background-color: orange;
+					width: 20%;
+					&:hover,&:focus{
+			    		width: 100%;
+			    		opacity: 0.8;
+			    	}
+				}
+			}
+			a:nth-child(3){
+				li{
+					background-color: yellowgreen;
+					width: 30%;
+					&:hover,&:focus{
+			    		width: 100%;
+			    	}
+				}
+			}
+			a:nth-child(4){
+				li{
+					background-color: gold;
+					width: 20%;
+					&:hover,&:focus{
+			    		width: 100%;
+			    	}
+				}
+			}
+			span{
+				&:hover,&:focus{
+			    		opacity:0.8;
+			    }
+			}
+		}
+    	
     }
-
 }
 
 

@@ -31,7 +31,7 @@ main{
 						top: 55%; 
 						width: 20px; 
 						left:-6px; 
-						z-index:-1;
+						
 					}
 					&:after{
 						content:""; 
@@ -41,7 +41,7 @@ main{
 						top: 55%; 
 						width: 20px;
 						right:-6px; 
-						z-index:-1;
+						
 					}
 				}
 				h1{
@@ -231,7 +231,7 @@ main{
 			top: 50%; 
 			width: 20px; 
 			left:0px; 
-			z-index:-1;
+			z-index: -1;
 		}
 		&:after{
 			content:""; 

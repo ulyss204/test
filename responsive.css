@@ -1,0 +1,79 @@
+@media screen and (max-width: 500px) {
+  #header {
+    background-color: red; }
+    #header #nav {
+      display: none; }
+    #header #rectangle {
+      border-color: white; }
+      #header #rectangle div {
+        background-color: white; }
+    #header #menu {
+      width: 100%; }
+
+  main section #scroller h1 {
+    font-size: 43px;
+    left: 0;
+    width: 100%; }
+  main section #scroller h4 {
+    margin-left: 38.5%; }
+  main section #scroller .circle {
+    display: none; }
+  main section #scroller .btn {
+    left: 29%; }
+  main section article {
+    overflow: inherit; }
+    main section article a .map {
+      display: none; }
+    main section article form {
+      width: 100%;
+      float: none;
+      padding-top: 20%;
+      height: 370px; }
+      main section article form h5 {
+        margin-top: 0; }
+      main section article form h3 {
+        left: 30%; }
+      main section article form .check1 {
+        width: 60%; }
+      main section article form .check {
+        margin-left: 35%; }
+  main .why {
+    display: none; }
+  main #why {
+    display: none; }
+  main aside {
+    margin-left: 0;
+    margin-top: 0;
+    width: 98%; }
+    main aside .news {
+      margin-left: 44%;
+      margin-bottom: 10%; }
+    main aside .bank {
+      width: 98%;
+      margin-bottom: 5%; }
+      main aside .bank a #marg {
+        margin-left: 0; }
+  main footer {
+    margin-left: 0; }
+    main footer .twitter {
+      margin-left: 32%; }
+    main footer p {
+      margin-left: 18%; }
+    main footer h5 {
+      margin-left: 20%; }
+    main footer form {
+      margin-left: 3%; }
+      main footer form .name {
+        width: 100%;
+        margin-top: 10%; }
+      main footer form #e-mail {
+        margin-left: 0; }
+      main footer form .message {
+        width: 95%; }
+      main footer form .btn-2 {
+        margin-left: 33%; }
+
+  footer {
+    display: none; } }
+
+/*# sourceMappingURL=responsive.css.map */

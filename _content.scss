@@ -112,7 +112,7 @@ main{
 		    .map{
 			    background: url(images/map1.png) no-repeat;
 			    position: absolute;
-                width: 600px;
+                width: 50%;
                 height: 540px;
                 float: left;
                 z-index: -1;
@@ -120,7 +120,7 @@ main{
 			    .sign{
 				    position: relative;
                     z-index: -1;
-                    margin-top: 28%;
+                    margin-top: 20%;
                     left: 39.5%;
 			    }
 			    .round{
@@ -128,8 +128,8 @@ main{
                     border-radius: 50px;
                     width: 50px;
                     height: 50px;
-                    margin-top: -23%;
-                    margin-left: 47%;
+                    margin-top: -22%;
+                    margin-left: 46%;
 			    }
 		    }
 		    form{
@@ -221,7 +221,7 @@ main{
         text-align: -webkit-center;
 		padding: 6px 15px 0 15px;
 		color: #da352c;	
-	    margin: 5% 44.5%; 
+	    margin: 5% 45.5%; 
 		display: block; 		
 		&:before{
 			content: "";
@@ -308,9 +308,10 @@ main{
 	}
 	aside{
 		float: left;
-		padding-left: 105px;
+		margin-left: 105px;
 		background-color: #fcfcfc;
 		margin-top: 5%;
+		width: 90%;
 	    .news{
             float: left;
 		    width: 112px; 
@@ -322,7 +323,7 @@ main{
             text-align: -webkit-center;
 		    padding: 6px 15px 0 15px;
 		    color: #da352c;	
-	        margin: 5% 42.5%; 
+	        margin: 5% 43.5%; 
 		    display: block; 		
 		    &:before{
 			    content: "";
@@ -349,7 +350,8 @@ main{
 		    
 		    .bank{
 			    float: left;
-                width: 50%;
+                width: 46%;
+                margin-left: 4%;
 			    .day{
                     position: absolute;
                     font-size: 22px;  
@@ -381,15 +383,13 @@ main{
                 	    margin-left: 20%;
                     }
                 }
-                #marg{
-            	    margin-left: 65px;
-                }
+                
             }
         	
 	}
 	footer{
 		float: left;
-        width: 100%;
+        width: 90%;
         margin-top: 35px;
         height: 100%;
         border: none;
@@ -402,9 +402,10 @@ main{
 		.contacts{
             font-size: 50px;
             line-height: 1;
-            margin-left: 37%;
+            margin-left: 41%;
             font-family: "PFSquareSansPro-Light";
             height: 35px;
+            width: 15%;
 		}
 		.net{
 			margin-right: 15%;
@@ -439,13 +440,14 @@ main{
 		}
 		.twitter{
 			width: 212px;
-    		margin-left: 33%;
+    		margin-left: 38%;
     		margin-top: 4%;
 		}
 		p{
 			margin-top: 15px;
 			width: 89%;
 			font-weight: bold;
+			margin-left: 4%;
 			span{
 				margin-left: 15px;
                 color: red;
@@ -457,7 +459,7 @@ main{
             font-size: 25px;
             margin-bottom: 20px;
             margin-top: 0;
-            margin-left: 35px;
+            margin-left: 6%;
             width: 84%;
             font-weight: bold;
             span{
@@ -466,7 +468,7 @@ main{
             }
 		}
 		form{
-			width: 92%;
+			width: 100%;
 		    .name{
 			    border: none;
 			    width: 47%;
@@ -477,7 +479,7 @@ main{
 
 		    }
 		    #e-mail{
-			    margin-left: 20px;
+			    margin-left: 2%;
 		    }
 		    .message{
                 width: 95.7%;
@@ -497,7 +499,7 @@ main{
                 color: #fff;
                 font-size: 18px;
                 text-transform: uppercase;
-                margin-left: 38.5%;
+                margin-left: 40%;
                 margin-top: 5%;
                 font-family: "PFSquareSansPro-Bold";
                 &:hover,&:focus{

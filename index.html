@@ -12,12 +12,12 @@
 </head>
 <body>
 	
-	<header >
+	<header id="header">
 		<a href="#"><div class="image">Digit</div></a>
 		
 		<nav>
 
-		    <ul>
+		    <ul id="nav">
 			   <a href="#"><li><span>Internet</span></li></a>
 			   <a href="#"><li><span>Telephony</span></li></a>
 			   <a href="#"><li><span id="VPS">VPS</span></li></a>
@@ -34,9 +34,9 @@
 		<div id="menu">
 			<a href="#"><div class="exit">X</div></a>
 			<h4>Digit</h4>
-			<ul>
+			<ul id="nav1">
 				<a href="#main"><li><span>main</span></li></a>
-			   <a href="#location"><li><span>location</span></li></a>
+			   <a href="#location"><li><span>coverage</span></li></a>
 			   <a href="#news"><li><span>news</span></li></a>
 			   <a href="#contacts"><li><span>contacts</span></li></a>
 			   
@@ -79,7 +79,7 @@
 			
 		</section>
 		<div class="why">why us?</div>
-		<article>
+		<article id="why">
 			
 		
 		<div class="offer">
@@ -134,7 +134,7 @@
 			</div>
 		</aside>
 		<footer id="contacts">
-			<div class="contacts">Contacts</div>
+			<h3 class="contacts">Contacts</h3>
 			<div class="twitter">
 				<ul class="net">
 					<a href="#"><li>google</li></a>
@@ -195,6 +195,12 @@
                 			 	 
         		});
                  $(".exit").click(function(){
+                	$("#menu").toggle("slow")
+
+                	$(this).toggleClass("active");
+                			 	 
+        		});
+                 $("#nav1").click(function(){
                 	$("#menu").toggle("slow")
 
                 	$(this).toggleClass("active");

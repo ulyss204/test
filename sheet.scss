@@ -28,7 +28,7 @@ body{
 	    	}
 	    	nav{
             	position: absolute;
-            	margin-left: 20%;
+            	margin-left: 22%;
             	top: 22px;
             	width: 70%;
 	        	ul{
@@ -132,36 +132,49 @@ body{
     } 
 	
 	#rectangle{
-	    width: 45px;
-	    height: 45px;
-	    border: 3px solid red;
+	    width: 60px;
+	    height: 60px;
+	    
 	    float: right;
         margin: 35px;
         position: relative;
+        -webkit-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);;
+		-moz-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+		transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+        &:hover{
+        	.line1{
+        		width: 22px;
+        		height: 4px;
+        		top: 25%;
+        	}
+        	.line1:nth-child(3){
+        	top: 75%;
+        	}
+        }
         .line1{
-        	width: 17px;
-            height: 2px;
+        	width: 20px;
+            height: 3px;
             background-color: red;
             position: absolute;
-            top: 63%;
+            top: 30%;
             left: 33%;
+            margin-bottom: 20%;
+            -webkit-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);;
+			-moz-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+			transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+            &:hover{
+            	top: 25%;
+            	width: 22px;
+            	height: 4px;
+            }
         }
-        .line2{
-        	width: 17px;
-            height: 2px;
-            background-color: red;
-            position: absolute;
-            top: 40%;
-            left: 33%;
+        .line1:nth-child(2){
+        	top: 50%;
         }
-        .line3{
-        	width: 17px;
-            height: 2px;
-            background-color: red;
-            position: absolute;
-            top: 50%;
-            left: 33%;
+        .line1:nth-child(3){
+        	top: 70%;
         }
+        
     }
     a{
     	text-decoration: none;
@@ -170,29 +183,25 @@ body{
     	
     	height: 100%;
     	background-color:#cb0511;
-    	width: 13.1%;
-    	display: none;
-    	right: 0;
-    	-webkit-transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);;
-		-moz-transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);
-		transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+    	width: 20%;
+    	
+    	-webkit-transition: transform 0.7s cubic-bezier(1, -0.48, 0, 1.58);;
+		-moz-transition: transform 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+		transition: transform 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+		transform: translateX(calc(-100% - 10px));
 		border-left: 3px solid red;
     	color: #fff;
 		z-index: 3;
 		position: fixed;
-		&:active{
-			right: 0;
-			display: block;
+		&.active{
+			transform: translateX(0);
 		}
 		.exit{
 			position: absolute;
-		    border: 1px solid white;
-		    font-size: 20px;
-		    padding-left: 3px;
-		    padding-right: 3px;
+		    
+		    font-size: 17px;
 		    color: white;
-		    box-shadow: 2px 2px 7px black;
-		    text-shadow: 2px 2px 4px black;
+		    
 		}
 		h4{
 			text-align: center;
@@ -209,57 +218,18 @@ body{
 			margin: 0;
     		list-style: none;
     		padding: 0;
-    		padding-left: 10%;
+    		padding-left: 8%;
     		li{
     			font-size: 20px;
 			    font-weight: 700;
 			    text-transform: uppercase;
-			    background-color: pink;
+			    margin-top: 10px;
 			    color: lavenderblush;
 			    width: 10%;
 			    text-indent: 15%;
-			    -webkit-transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);;
-				-moz-transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);
-				transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);
-			    &:hover,&:focus{
-			    	width: 100%;
-			    	
-			    }
-
+			
 			}
-    		a:nth-child(2){
-				li{
-					background-color: orange;
-					width: 20%;
-					&:hover,&:focus{
-			    		width: 100%;
-			    		opacity: 0.8;
-			    	}
-				}
-			}
-			a:nth-child(3){
-				li{
-					background-color: yellowgreen;
-					width: 30%;
-					&:hover,&:focus{
-			    		width: 100%;
-			    	}
-				}
-			}
-			a:nth-child(4){
-				li{
-					background-color: gold;
-					width: 20%;
-					&:hover,&:focus{
-			    		width: 100%;
-			    	}
-				}
-			}
-			span{
-				&:hover,&:focus{
-			    		opacity:0.8;
-			    }
-			}
+    		
 		}
     	
     }

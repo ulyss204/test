@@ -18,7 +18,7 @@ main{
                 	text-align: center;
 					padding: 6px 15px 0 15px;
 					color: #fff;
-				
+					margin-right: 0;
 					font-weight: bold;
 					margin: 10% 44.5%; 
 					display: block;
@@ -138,6 +138,7 @@ main{
                 position: relative;
                 background-color: #fcfcfc;
                 height: 540px;
+                overflow: hidden;
 			    h5{
 				    color: red; 
 				    margin-left: 50%;
@@ -153,7 +154,7 @@ main{
 					    border-top: 2px solid #e7e7e7; 
 					    top: 35%; 
 					    width: 20px; 
-					    left:-12%; 
+					    left:-35px; 
 					
 				    }
 				    &:after{
@@ -163,7 +164,7 @@ main{
 					    border-top: 2px solid #e7e7e7; 
 					    top: 37%; 
 					    width: 20px;
-					    right:78%; 
+					    left: 40px; 
 					
 				    }
 			    }
@@ -251,7 +252,7 @@ main{
 		    width: 37%;
             float: left;
             position: relative;
-            padding-left: 105px;
+            padding-left: 9%;
             padding-right: 50px;
             h6{
 
@@ -260,7 +261,7 @@ main{
                 text-transform: uppercase;
                 line-height: 2.083;
                 text-align: left;
-                width: 27%;
+                width: 120px;
                 &:after{
             	    content: "";
             	    border-bottom: 1px solid #da352c;
@@ -308,10 +309,10 @@ main{
 	}
 	aside{
 		float: left;
-		margin-left: 105px;
+		padding-left: 9%;
 		background-color: #fcfcfc;
 		margin-top: 5%;
-		width: 90%;
+		width: 89%;
 	    .news{
             float: left;
 		    width: 112px; 

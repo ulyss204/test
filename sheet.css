@@ -11,6 +11,7 @@ main section #scroller {
     text-align: center;
     padding: 6px 15px 0 15px;
     color: #fff;
+    margin-right: 0;
     font-weight: bold;
     margin: 10% 44.5%;
     display: block;
@@ -106,7 +107,8 @@ main section article {
     width: 50%;
     position: relative;
     background-color: #fcfcfc;
-    height: 540px; }
+    height: 540px;
+    overflow: hidden; }
     main section article form h5 {
       color: red;
       margin-left: 50%;
@@ -122,7 +124,7 @@ main section article {
         border-top: 2px solid #e7e7e7;
         top: 35%;
         width: 20px;
-        left: -12%; }
+        left: -35px; }
       main section article form h5:after {
         content: "";
         display: block;
@@ -130,7 +132,7 @@ main section article {
         border-top: 2px solid #e7e7e7;
         top: 37%;
         width: 20px;
-        right: 78%; }
+        left: 40px; }
     main section article form h3 {
       color: #000;
       position: absolute;
@@ -199,7 +201,7 @@ main article {
     width: 37%;
     float: left;
     position: relative;
-    padding-left: 105px;
+    padding-left: 9%;
     padding-right: 50px; }
     main article .offer h6 {
       font-size: 15px;
@@ -207,7 +209,7 @@ main article {
       text-transform: uppercase;
       line-height: 2.083;
       text-align: left;
-      width: 27%; }
+      width: 120px; }
       main article .offer h6:after {
         content: "";
         border-bottom: 1px solid #da352c;
@@ -243,10 +245,10 @@ main article {
       text-transform: uppercase; }
 main aside {
   float: left;
-  margin-left: 105px;
+  padding-left: 9%;
   background-color: #fcfcfc;
   margin-top: 5%;
-  width: 90%; }
+  width: 89%; }
   main aside .news {
     float: left;
     width: 112px;
@@ -400,7 +402,8 @@ footer {
   height: 290px;
   border-top: 2px solid #da352c;
   overflow: auto;
-  display: -webkit-inline-box; }
+  display: -webkit-inline-box;
+  float: left; }
   footer .left {
     margin-left: 5%; }
     footer .left h2 {
@@ -426,9 +429,11 @@ footer {
   footer #right {
     margin-left: 5%; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   #header {
-    background-color: red; }
+    background-color: #f1efef; }
+    #header .image {
+      width: 40%; }
     #header #nav {
       display: none; }
     #header #rectangle {
@@ -458,13 +463,17 @@ footer {
       padding-top: 20%;
       height: 370px; }
       main section article form h5 {
-        margin-top: 0; }
+        margin-top: 0;
+        margin-left: 49%; }
       main section article form h3 {
         left: 30%; }
       main section article form .check1 {
         width: 60%; }
       main section article form .check {
         margin-left: 35%; }
+      main section article form .btn1 {
+        margin-left: 34%;
+        margin-top: 40%; }
   main .why {
     display: none; }
   main #why {
@@ -474,7 +483,7 @@ footer {
     margin-top: 0;
     width: 98%; }
     main aside .news {
-      margin-left: 44%;
+      margin-left: 39%;
       margin-bottom: 10%; }
     main aside .bank {
       width: 98%;
@@ -499,10 +508,72 @@ footer {
       main footer form .message {
         width: 95%; }
       main footer form .btn-2 {
-        margin-left: 33%; }
+        margin-left: 26%; }
 
   footer {
     display: none; } }
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1200px; } }
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  #header {
+    height: 200px; }
+    #header a .image {
+      margin-top: 55px; }
+    #header nav {
+      height: 150px;
+      margin-left: 25%; }
+      #header nav #nav {
+        height: 150px; }
+        #header nav #nav li {
+          margin-right: 23%; }
+        #header nav #nav a:nth-child(4) li {
+          margin-top: 10%;
+          margin-right: 26%;
+          margin-left: 2%; }
+        #header nav #nav a:nth-child(5) li {
+          margin-right: 21%; }
+        #header nav #nav a:nth-child(6) {
+          margin-right: 0; }
+    #header #rectangle {
+      margin-right: 6%;
+      margin-top: 65px;
+      margin-left: 0; }
+    #header #menu {
+      width: 100%; }
+
+  main section #scroller .scroll h4 {
+    margin: 10% 42.5%; }
+  main section #scroller .scroll h1 {
+    width: 60%; }
+  main section #scroller .scroll .circle {
+    display: none; }
+  main section #scroller .scroll .btn {
+    top: 70%;
+    left: 36%; }
+  main section article form h3 {
+    width: 43%;
+    left: 33%; }
+  main section article form .check1 {
+    width: 70%;
+    margin-top: 25%; }
+  main section article form .check {
+    margin-left: 33%;
+    margin-top: 50%; }
+  main section article .map .round {
+    margin-top: -36%;
+    margin-left: 50%; }
+  main #why .offer {
+    width: 65%;
+    padding-left: 20%; }
+    main #why .offer span {
+      display: none; }
+  main #contacts .contacts {
+    margin-left: 36%; }
+  main #contacts .twitter {
+    margin-left: 35%; }
+  main #contacts .btn2 {
+    margin-left: 35%; } }
 body {
   margin: 0px auto;
   width: 100%;
@@ -526,7 +597,7 @@ body {
       font-weight: 700; }
     body header nav {
       position: absolute;
-      margin-left: 20%;
+      margin-left: 22%;
       top: 22px;
       width: 70%; }
       body header nav ul {
@@ -592,60 +663,59 @@ body {
           padding-left: 5px;
           padding-right: 4px; }
   body #rectangle {
-    width: 45px;
-    height: 45px;
-    border: 3px solid red;
+    width: 60px;
+    height: 60px;
     float: right;
     margin: 35px;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+    -moz-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+    transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58); }
+    body #rectangle:hover .line1 {
+      width: 22px;
+      height: 4px;
+      top: 25%; }
+    body #rectangle:hover .line1:nth-child(3) {
+      top: 75%; }
     body #rectangle .line1 {
-      width: 17px;
-      height: 2px;
+      width: 20px;
+      height: 3px;
       background-color: red;
       position: absolute;
-      top: 63%;
-      left: 33%; }
-    body #rectangle .line2 {
-      width: 17px;
-      height: 2px;
-      background-color: red;
-      position: absolute;
-      top: 40%;
-      left: 33%; }
-    body #rectangle .line3 {
-      width: 17px;
-      height: 2px;
-      background-color: red;
-      position: absolute;
-      top: 50%;
-      left: 33%; }
+      top: 30%;
+      left: 33%;
+      margin-bottom: 20%;
+      -webkit-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+      -moz-transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58);
+      transition: all 0.3s cubic-bezier(1, -0.48, 0, 1.58); }
+      body #rectangle .line1:hover {
+        top: 25%;
+        width: 22px;
+        height: 4px; }
+    body #rectangle .line1:nth-child(2) {
+      top: 50%; }
+    body #rectangle .line1:nth-child(3) {
+      top: 70%; }
   body a {
     text-decoration: none; }
   body #menu {
     height: 100%;
     background-color: #cb0511;
-    width: 13.1%;
-    display: none;
-    right: 0;
-    -webkit-transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);
-    -moz-transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);
-    transition: left 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+    width: 20%;
+    -webkit-transition: transform 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+    -moz-transition: transform 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+    transition: transform 0.7s cubic-bezier(1, -0.48, 0, 1.58);
+    transform: translateX(calc(-100% - 10px));
     border-left: 3px solid red;
     color: #fff;
     z-index: 3;
     position: fixed; }
-    body #menu:active {
-      right: 0;
-      display: block; }
+    body #menu.active {
+      transform: translateX(0); }
     body #menu .exit {
       position: absolute;
-      border: 1px solid white;
-      font-size: 20px;
-      padding-left: 3px;
-      padding-right: 3px;
-      color: white;
-      box-shadow: 2px 2px 7px black;
-      text-shadow: 2px 2px 4px black; }
+      font-size: 17px;
+      color: white; }
     body #menu h4 {
       text-align: center;
       text-shadow: 8px 6px 12px #000;
@@ -660,37 +730,14 @@ body {
       margin: 0;
       list-style: none;
       padding: 0;
-      padding-left: 10%; }
+      padding-left: 8%; }
       body #menu ul li {
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
-        background-color: pink;
+        margin-top: 10px;
         color: lavenderblush;
         width: 10%;
-        text-indent: 15%;
-        -webkit-transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);
-        -moz-transition: width 1s cubic-bezier(1, -0.48, 0, 1.58);
-        transition: width 1s cubic-bezier(1, -0.48, 0, 1.58); }
-        body #menu ul li:hover, body #menu ul li:focus {
-          width: 100%; }
-      body #menu ul a:nth-child(2) li {
-        background-color: orange;
-        width: 20%; }
-        body #menu ul a:nth-child(2) li:hover, body #menu ul a:nth-child(2) li:focus {
-          width: 100%;
-          opacity: 0.8; }
-      body #menu ul a:nth-child(3) li {
-        background-color: yellowgreen;
-        width: 30%; }
-        body #menu ul a:nth-child(3) li:hover, body #menu ul a:nth-child(3) li:focus {
-          width: 100%; }
-      body #menu ul a:nth-child(4) li {
-        background-color: gold;
-        width: 20%; }
-        body #menu ul a:nth-child(4) li:hover, body #menu ul a:nth-child(4) li:focus {
-          width: 100%; }
-      body #menu ul span:hover, body #menu ul span:focus {
-        opacity: 0.8; }
+        text-indent: 15%; }
 
 /*# sourceMappingURL=sheet.css.map */

@@ -1,12 +1,13 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   #header {
     background-color: #f1efef; }
     #header .image {
-      width: 40%; }
+      width: 189px; }
     #header #nav {
       display: none; }
     #header #rectangle {
-      border-color: white; }
+      border-color: white;
+      margin: 25px; }
       #header #rectangle div {
         background-color: white; }
     #header #menu {
@@ -84,7 +85,7 @@
 @media screen and (min-width: 1280px) {
   #body {
     width: 1280px; } }
-@media screen and (min-width: 700px) and (max-width: 1280px) {
+@media screen and (min-width: 800px) and (max-width: 1280px) {
   #header {
     height: 200px; }
     #header a .image {

@@ -8,7 +8,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="stylename.css" type="text/css" />
 	<link rel="stylesheet" href="js/vegas/vegas.min.css">
+	<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 	
+	<script src="js/vegas/vegas.min.js"></script>
+
+	 <script type="text/javascript" async>
+            $(document).ready(function() {
+                $("#scroller").vegas({
+                	delay:4000,
+                	transitionDuration: 2000,
+                	transition: 'slideLeft2',
+                    slides: [
+                        {src:'images/mountain.png'},
+                        {src:'images/road.png', transition: 'slideRight2',},
+                        {src:'images/abstract-speed-of-light.png'}
+                    ]
+                    
+                });
+                $('#scroller').on('click', function () {
+				    $(this).vegas('toggle');
+				});
+				
+                $('.point').on('click', function () {
+				    $('#scroller').vegas('jump', 0);
+				});
+				$('.round').on('click', function () {
+				    $('#scroller').vegas('jump', 1);
+				});
+				$('#third').on('click', function () {
+				    $('#scroller').vegas('jump', 2);
+				});
+
+                 $("#rectangle").click(function(){
+                	
+                	$("#menu").toggleClass("active");			 	 
+        		});
+                 $(".exit").click(function(){
+                	
+
+                	$("#menu").toggleClass("active");
+                			 	 
+        		});
+                 $("#nav1").click(function(){
+                	$("#menu").toggleClass("active");			 	 
+        		});
+        		
+            });
+                 
+        </script>
 	
 </head>
 <body id="body">
@@ -175,54 +222,7 @@
 			<a href="#"><li><span>Solutions</span></li></a>
 		</ul>
 	</footer>
-	<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 	
-	<script src="js/vegas/vegas.min.js"></script>
-
-	 <script type="text/javascript">
-            $(document).ready(function() {
-                $("#scroller").vegas({
-                	delay:4000,
-                	transitionDuration: 2000,
-                	transition: 'slideLeft2',
-                    slides: [
-                        {src:'images/mountain.png'},
-                        {src:'images/road.png', transition: 'slideRight2',},
-                        {src:'images/abstract-speed-of-light.png'}
-                    ]
-                    
-                });
-                $('#scroller').on('click', function () {
-				    $(this).vegas('toggle');
-				});
-				
-                $('.point').on('click', function () {
-				    $('#scroller').vegas('jump', 0);
-				});
-				$('.round').on('click', function () {
-				    $('#scroller').vegas('jump', 1);
-				});
-				$('#third').on('click', function () {
-				    $('#scroller').vegas('jump', 2);
-				});
-
-                 $("#rectangle").click(function(){
-                	
-                	$("#menu").toggleClass("active");			 	 
-        		});
-                 $(".exit").click(function(){
-                	
-
-                	$("#menu").toggleClass("active");
-                			 	 
-        		});
-                 $("#nav1").click(function(){
-                	$("#menu").toggleClass("active");			 	 
-        		});
-        		
-            });
-                 
-        </script>
 
 
 </body>

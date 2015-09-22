@@ -8,3 +8,18 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: "PFSquareSansPro-Bold"; 
+    src: url(fonts/PFSquareSansPro-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "PFSquareSansPro-Regular"; 
+    src: url(fonts/PFSquareSansPro-Regular.ttf);
+    
+}
+@font-face {
+    font-family: "PFSquareSansPro-Light"; 
+    src: url(fonts/PFSquareSansPro-Light.ttf);
+    
+}
